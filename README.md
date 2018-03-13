@@ -1,0 +1,2 @@
+# Tricks
+Just for fun! :)
