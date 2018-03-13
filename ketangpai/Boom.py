@@ -112,7 +112,7 @@ def auto_gernerate(title, author):
 def sent(filename):
     header = {    
         'User-Agent':'Mozilla/5.0 (X11; Fedora; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
-        'Cookie':'PHPSESSID=sh3ql2ecsdlo9e3o45jjqp4rf2; ketangpai_home_remember=think%3A%7B%22username%22%3A%22MDAwMDAwMDAwMLOGy5iGqauwhbh-mLLfo54%22%2C%22expire%22%3A%22MDAwMDAwMDAwMLOGud2GqdGwhbiclbKmdZ4%22%2C%22token%22%3A%22MDAwMDAwMDAwMMurrpWavLehhs1-3LGphduFp3-WepuomcWmmqaMiHtnr5ylzYWosKKZq6HQxtOK0ZCme5p-q6iZu2yrn4uNhJ3KedDYk7ivboS4it2xqaPZhLeZlX96YW0%22%7D'
+        'Cookie':'***********'
     }
     datas = {
         'content':'',
