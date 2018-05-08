@@ -70,7 +70,7 @@ def sent(filename):
 while(True):
     t = datetime.datetime.now()
     h = 10
-    m = 21
+    m = 43
     if (t.hour == h and t.minute == m and flag):
         flag = False
         auto_gernerate("The Call of the Wild", "Jack London")
