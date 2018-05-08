@@ -25,16 +25,22 @@ def auto_gernerate_single():
     voc = voclist[random.randint(0,len(voclist) - 1)].text
     print("Find voc:" ,voc)
     dic = {}
-    soup = BeautifulSoup(request.urlopen(root_url+voc),"lxml")
-    trans_container = soup.find("div",{"class":"trans-container"})
-    Definition = str(trans_container.find("ul").text).replace("\n","  ")
-    # get the example of the voc
-    examplesToggle = soup.find("div",{"id":"examplesToggle"})
-    temp = examplesToggle.find("li").findAll("p")
-    Example = (str(temp[0].text) + str(temp[1].text)).replace("\n"," ")
-    dic["Vocabulary"] = voc.replace("_"," ")
-    dic["Definition"] = Definition
-    dic["Example"] = Example
+    flag = True
+    while(flag):
+        try:
+            soup = BeautifulSoup(request.urlopen(root_url+voc),"lxml")
+            trans_container = soup.find("div",{"class":"trans-container"})
+            Definition = str(trans_container.find("ul").text).replace("\n","  ")
+            # get the example of the voc
+            examplesToggle = soup.find("div",{"id":"examplesToggle"})
+            temp = examplesToggle.find("li").findAll("p")
+            Example = (str(temp[0].text) + str(temp[1].text)).replace("\n"," ")
+            dic["Vocabulary"] = voc.replace("_"," ")
+            dic["Definition"] = Definition
+            dic["Example"] = Example
+            flag = False
+        except:
+            print("Error: can't construct dic.")
     return dic
 
 def auto_gernerate(title, author):
