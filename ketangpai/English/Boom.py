@@ -67,7 +67,13 @@ def sent(filename,cookie):
     topicid = "MDAwMDAwMDAwMLOGx9uHz6dt"
     datas["content"]=content
     datas["topicid"]=topicid
-    response = requests.post("https://www.ketangpai.com/TopicDiscussApi/addDiscuss", headers=header, data=datas).content
+    flag = True
+    while(flag):
+        try:
+            response = requests.post("https://www.ketangpai.com/TopicDiscussApi/addDiscuss", headers=header, data=datas, timeout=5).content
+            flag = False
+        except:
+            print("Time out.")
     print("Submit is successful!")
 
 # configuration
@@ -79,7 +85,7 @@ cookie_gyc = "gr_user_id=1a88fc17-2a05-4952-8232-15e882bce2c5; _ga=GA1.2.1178122
 
 h_pei = 10; m_pei = 30
 h_sbfw = 6; m_sbfw = 30
-h_lyt = 16; m_lyt = 38
+h_lyt = 17; m_lyt = 33
 h_gyc = 21; m_gyc = 22
 
 flag_pei = True
