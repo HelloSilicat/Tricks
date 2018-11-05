@@ -1,5 +1,5 @@
-# Tricks
-Just for fun! :joy:
+# 储物柜
+ :joy:
 
 
 
@@ -10,3 +10,7 @@ Just for fun! :joy:
    A program which can generate and submit homework for class 4E34&33.
 
    ​
+
+2. C 词法分析器
+
+   [Details](C语言词法分析器/README.md)

@@ -1,0 +1,36 @@
+/*Ô¤±àÒëÓï¾ä²âÊÔ*/
+#include <stdio.h>
+#define True 1   
+
+//×¢ÊÍ²âÊÔ 
+/*Hello,
+    this is a comment*/
+
+// ±£Áô×Ö£ºint£¬±êÊ¶·ûmain ²âÊÔ 
+int main(void)
+{
+	// Òì³£´¦Àí²âÊÔ
+	int a = 1.x;
+	int b = 1.2Ea;
+	int c = 1.2E+p;
+	int d = @;
+	
+	// ×Ö·û´®²âÊÔ
+	char _string[256] = "Hello,World!";
+	char ss[256] = "Hello,\"wolrd!";
+	char s = 'hi';
+	char sss = '\'';
+	
+	// ³£Êı²âÊÔ
+	1;
+	1.2;
+	1.2e4;
+	1.2e-4;
+	
+	// ²Ù×÷·û,±ß½ç·û²âÊÔ
+	{1<=0,1<<=2,a++,a->p,a&&p};
+	[1!=2,1^2,1/=0,*p];
+	 
+	return 0;
+} 
+
