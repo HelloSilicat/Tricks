@@ -13,4 +13,4 @@
 
 2. C 词法分析器
 
-   [Details](C语言词法分析器/README.md)
+   [Details](c语言词法分析器/README.md)
